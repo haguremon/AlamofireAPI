@@ -8,8 +8,7 @@
 import Foundation
 import Alamofire
 protocol getMyGitHubDelegate: AnyObject {
-    func getUser(user: [Owner])
-    func geteRepository(repository: [HaguremonRepository])
+    func getUser(user: [Owner],repository: [HaguremonRepository])
 }
 class AlamofireAPI {
     weak var delegate: getMyGitHubDelegate?
@@ -24,8 +23,7 @@ class AlamofireAPI {
 
                 let repository = try JSONDecoder().decode(MyGitHub.self, from: data).items
                 guard let user = repository.first?.owner else { return }
-                self?.delegate?.getUser(user: [user])
-                self?.delegate?.geteRepository(repository: repository)
+                self?.delegate?.getUser(user: [user],repository: repository)
             } catch {
                 print(error)
             }

@@ -15,6 +15,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         alamoFireApi.delegate = self
+        alamoFireApi.alamofireApi()
     }
 
     // MARK: - Table view data source
@@ -52,13 +53,12 @@ class TableViewController: UITableViewController {
     }
 }
 extension TableViewController: getMyGitHubDelegate {
-    func getUser(user: [Owner]) {
+    func getUser(user: [Owner], repository: [HaguremonRepository]) {
         self.user = user
-    }
-    
-    func geteRepository(repository: [HaguremonRepository]) {
         self.repository = repository
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
-    
     
 }
