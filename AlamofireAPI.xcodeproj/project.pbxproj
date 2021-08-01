@@ -15,6 +15,7 @@
 		CF552A2A26B539F7000F5A1B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF552A2826B539F7000F5A1B /* TableViewController.swift */; };
 		CF552A3026B53AD1000F5A1B /* MyGitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF552A2F26B53AD1000F5A1B /* MyGitHub.swift */; };
 		CF552A3226B53EFC000F5A1B /* AlamofireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF552A3126B53EFC000F5A1B /* AlamofireAPI.swift */; };
+		CF9748E126B68A8D00E07073 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF9748E326B68A8D00E07073 /* InfoPlist.strings */; };
 		F26C15B0552BD312DA0D2120 /* Pods_AlamofireAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A322ADCCC3391637C228C1 /* Pods_AlamofireAPI.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,10 @@
 		CF552A2826B539F7000F5A1B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CF552A2F26B53AD1000F5A1B /* MyGitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGitHub.swift; sourceTree = "<group>"; };
 		CF552A3126B53EFC000F5A1B /* AlamofireAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAPI.swift; sourceTree = "<group>"; };
+		CF9748E726B68C7100E07073 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF9748E926B68E7D00E07073 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		CF9748EA26B68E7D00E07073 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CF9748EB26B68E8B00E07073 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,7 @@
 				CF552A2C26B53A60000F5A1B /* Views */,
 				CF552A1D26B539A0000F5A1B /* Assets.xcassets */,
 				CF552A1F26B539A0000F5A1B /* LaunchScreen.storyboard */,
+				CF9748E326B68A8D00E07073 /* InfoPlist.strings */,
 				CF552A2226B539A0000F5A1B /* Info.plist */,
 			);
 			path = AlamofireAPI;
@@ -164,6 +170,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = CF552A0826B5399B000F5A1B;
 			productRefGroup = CF552A1226B5399C000F5A1B /* Products */;
@@ -181,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF552A2126B539A0000F5A1B /* LaunchScreen.storyboard in Resources */,
+				CF9748E126B68A8D00E07073 /* InfoPlist.strings in Resources */,
 				CF552A1E26B539A0000F5A1B /* Assets.xcassets in Resources */,
 				CF552A1C26B5399C000F5A1B /* Main.storyboard in Resources */,
 			);
@@ -250,6 +258,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CF552A1B26B5399C000F5A1B /* Base */,
+				CF9748E926B68E7D00E07073 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -258,8 +267,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				CF552A2026B539A0000F5A1B /* Base */,
+				CF9748EA26B68E7D00E07073 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CF9748E326B68A8D00E07073 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF9748E726B68C7100E07073 /* en */,
+				CF9748EB26B68E8B00E07073 /* ja */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -269,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -330,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
